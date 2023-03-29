@@ -1,0 +1,48 @@
+.producto {
+	border: 1px solid silver;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.producto header {
+	margin-bottom: 10px;
+}
+
+.producto header h1 {
+	margin: 0;
+}
+
+.producto .imagenes {
+	margin: 0;
+}
+
+.producto .imagenes img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.producto footer .comprar {
+	width: 100%;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.producto.oferta {
+	border-color: yellow;
+}
+
+.producto.oferta .precio {
+	font-weight: bold;
+	font-size: 200%;
+}
+
+main {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+main > header {
+	grid-column: span 3;
+}
