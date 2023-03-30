@@ -37,12 +37,12 @@
 	font-size: 200%;
 }
 
-main {
+.categoria {
 	display: grid;
 	gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
 }
 
-main > header {
+.categoria > header {
 	grid-column: span 3;
 }
