@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clase 3: Formularios</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+	<main>
+		<form method="post" action="registro.php">
+			<header>
+				<h1>Registro de usuario</h1>
+			</header>
+
+			<div class="campo">
+				<label for="registro-nombre">Nombre</label>
+				<input id="registro-nombre" type="text" name="nombre" required minlength="2" maxlength="20">
+			</div>
+			<div class="campo">
+				<label for="registro-email">E-mail</label>
+				<input id="registro-email" type="email" name="email" pattern="@gmail.com$">
+				<p>Coloca sólo correos de G-mail</p>
+			</div>
+			<div class="campo">
+				<label for="registro-edad">Edad</label>
+				<input type="number" name="edad" id="registro-edad" min="18">
+			</div>
+			<div class="campo">
+				<label for="registro-pais">País</label>
+				<select id="registro-pais" name="pais" required>
+					<option value="">(Selecciona)</option>
+					<option value="VE">Venezuela</option>
+					<option value="CO">Colombia</option>
+					<option value="PE">Perú</option>
+				</select>
+			</div>
+			<div>
+				<label for="registro-bio">Biografía</label>
+				<textarea id="registro-bio" name="bio"></textarea>
+			</div>
+			<div>
+				<label for="registro-acuerdo">¿Está de acuerdo con nuestros términos?</label>
+				<input id="registro-acuerdo" type="checkbox" name="acuerdo" value="si">
+			</div>
+			<div>
+				<label>Ocupación</label>
+
+				<input id="registro-ocupacion-trabajador" type="radio" name="ocupacion" value="trabajador">
+				<label for="registro-ocupacion-trabajador">Trabajador</label>
+
+				<input id="registro-ocupacion-estudiante" type="radio" name="ocupacion" value="estudiante">
+				<label for="registro-ocupacion-estudiante">Estudiante</label>
+			</div>
+			<div>
+				<label for="">Color</label>
+				<input type="range" name="color" min="0" max="10" step="2">
+			</div>
+			<footer>
+				<!--
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Reestablecer">
+				<input type="button" value="Botón que no hace nada">
+				-->
+				<button>Enviar</button>
+				<button type="reset">Reestablecer</button>
+				<button type="button">Botón que no hace nada</button>
+			</footer>
+		</form>
+	</main>
+	<script>
+		// document.querySelector("#registro-email").setCustomValidity("sólo e-mails que terminen en @gmail.com");
+	</script>
+</body>
+</html>
