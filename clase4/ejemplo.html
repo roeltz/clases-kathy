@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style>
+		/* selector de tipo */
+		div {
+			width: 50px;
+			height: 50px;
+			border: 2px solid red;
+		}
+
+		/* selector de clase */
+		.importante {
+			border-color: yellow;
+		}
+
+		/* selector de id */
+		#x1234 {
+			background: green;
+		}
+
+		/* selector universal */
+		* {
+			border: 5px solid black;
+		}
+
+		/* selector de atributo */
+		[data-precio] {
+			border-radius: 20px;
+		}
+
+		[required] {
+
+		}
+
+		/* selector de atributo con valor */
+		[data-precio="500"] {
+			transform: rotate(20deg);
+		}
+
+		input[type="text"] {
+
+		}
+
+		input[type="date"] {
+
+		}
+
+		/* selector de descendiente (hijo, nieto, bisnieto, etc) */
+		main div {
+			width: 100px;
+			height: 100px;
+		}
+
+		/* selector de descendiente directo (hijo) */
+		body > div {
+			background: silver;
+		}
+
+		/* selector ... */
+		input, select, textarea {
+			box-shadow: 0 5px 10px green;
+		}
+
+		/* pseudoclases */
+
+		/* pseudoclases de interacción */
+		div:hover {
+			transform: scale(2);
+		}
+
+		div:active {
+			transform: scale(0.5);
+		}
+
+		input:focus {
+			background: orange;
+		}
+
+		/* pseudoclases estructurales */
+		div:first-child {
+			background: purple;
+		}
+
+		div:first-of-type {
+			background: salmon;
+		}
+
+		div:nth-child(3) {
+			background: darkslategray;
+		}
+
+		div:nth-child(even) {
+			background: pink;
+		}
+
+		table, td {
+			border: 1px solid #bbb;
+		}
+
+		tr:nth-child(even) {
+			background: silver;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div></div>
+		<div class="importante"></div>
+		<div data-precio="500"></div>
+		<div></div>
+		<div></div>
+		<div id="x1234"></div>
+		<div data-precio="200"></div>
+		<div></div>
+		<div class="importante"></div>
+		<div></div>
+		<div class="importante"></div>
+		<div></div>
+		<div data-precio="500"></div>
+	</main>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<input type="text" required>
+	<select required></select>
+	<textarea required></textarea>
+	<table>
+		<tbody>
+			<tr>
+				<td>Kathy</td>
+			</tr>
+			<tr>
+				<td>Evangeline</td>
+			</tr>
+			<tr>
+				<td>Leonardo</td>
+			</tr>
+			<tr>
+				<td>Ada</td>
+			</tr>
+			<tr>
+				<td>Diosito</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

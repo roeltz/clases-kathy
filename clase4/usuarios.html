@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Usuarios</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+
+		main {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		/* selector de clase (punto) */
+		.usuario {
+			border: 1px solid #bbb;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.usuario p {
+			font-size: 12px;
+		}
+
+		.avatar {
+			width: 60px;
+			height: 60px;
+			margin-top: 0;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 0;
+			border-radius: 30px;
+			overflow: hidden;
+		}
+
+		.avatar img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		/* selector de ID */
+		#usuario1 {
+			border-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<article class="usuario" id="usuario1">
+			<figure class="avatar">
+				<img src="https://www.kakoto.org/media/avatar/20230422183046-620d8de382a173a3751854abb6c9ca5776ac9291.jpg" alt="">
+			</figure>
+			<h1>Usuario1</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cumque quam accusantium sint, temporibus excepturi.</p>
+		</article>
+		<article class="usuario">
+			<figure class="avatar">
+				<img src="https://www.kakoto.org/media/avatar/20210524050749-ea5a5d421f08a2ea14012f245bfdefda677cf55c.jpg" alt="">
+			</figure>
+			<h1>Usuario2</h1>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam sed est delectus neque asperiores, dignissimos eum magnam illum consequuntur.</p>
+		</article>
+		<article class="usuario">
+			<figure class="avatar">
+				<img src="https://www.kakoto.org/media/avatar/20220805155531-5900c67cf1d85168c7deb63281cda7af7e37133e.jpg" alt="">
+			</figure>
+			<h1>Usuario3</h1>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam provident odit perspiciatis explicabo voluptatum velit id tenetur eaque.</p>
+		</article>
+		<article class="usuario">
+			<figure class="avatar">
+				<img src="https://www.kakoto.org/media/avatar/20221128145312-83317dbc10f1ce7fbc4c87b29be85a6ad40159d9.jpg" alt="">
+			</figure>
+			<h1>Usuario4</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consectetur officia nisi illo tempore sapiente.</p>
+		</article>
+	</main>
+	<aside>
+		<article class="publicidad">
+			<img src="https://img.freepik.com/psd-premium/banner-web-promocion-marketing-digital_138558-722.jpg" alt="">
+		</article>
+	</aside>
+</body>
+</html>
