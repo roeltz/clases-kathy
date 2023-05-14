@@ -1,0 +1,80 @@
+#contenedor {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#banner {
+	width: 100%;
+}
+
+#celda-banner {
+	padding-top: 10px;
+	border-top: 4px solid #FE5000;
+}
+
+#celda-titulo {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+#titulo-principal {
+	font-size: 18px;
+	margin: 0;
+}
+
+#fecha-lugar {
+	font-size: 16px;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.link-registro {
+	padding: 7px;
+	background-color: #FE5000;
+	border-radius: 100px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#celda-texto {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	line-height: 1.5;
+}
+
+#celda-ponentes,
+#celda-agenda {
+	font-size: 14px;
+}
+
+.margen-lateral {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.titulo-secundario {
+	color: #FE5000;
+	font-size: 18px;
+}
+
+.titulo-secundario > div {
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 3px solid #FE5000;
+}
+
+#celda-registro-final {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	border-bottom: 4px solid #FE5000;
+}
+
+#celda-registro-final .link-registro {
+	padding: 9px;
+	font-size: 20px;
+}
