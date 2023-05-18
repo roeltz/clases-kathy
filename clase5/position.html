@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Posicionamiento</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style>
+		/* No hace nada de posicionamiento */
+		#static {
+			position: static;
+			background: pink;
+		}
+
+		/* Punto de referencia: posición original del elemento */
+		#relative {
+			position: relative;
+			top: 10px;
+			left: 20px;
+			background: yellow;
+		}
+
+		/* Punto de referencia: cualquier padre que tenga position != static */
+		#absolute {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 150px;
+			background: green;
+		}
+
+		/* Sólo se usa el position: relative para servir de referencia al #absolute2 */
+		#relative2 {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			background: silver;
+		}
+
+		/* Punto de referencia: cualquier padre que tenga position != static */
+		#absolute2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: purple;
+		}
+
+		/* Punto de referencia: el visor (viewport) */
+		#fixed {
+			position: fixed;
+			top: 50px;
+			right: 0;
+			background: orange;
+		}
+
+		#sticky {
+			position: sticky;
+			top: 100px;
+			width: 200px;
+			height: 200px;
+			background: teal;
+		}
+	</style>
+</head>
+<body>
+	<div id="static">
+		position: static;
+	</div>
+	<div id="relative">
+		position: relative;
+	</div>
+	<div id="absolute">
+		position: absolute;
+	</div>
+	<div id="relative2">
+		position: relative; (2)
+		<div id="absolute2">
+			position: absolute; (2)
+		</div>
+	</div>
+	<div id="fixed">
+		position: fixed;
+	</div>
+	<div id="sticky">
+		position: sticky;
+	</div>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, cumque quis. Repellat, impedit. Non obcaecati inventore accusantium similique recusandae et, perferendis est voluptatum assumenda explicabo quasi ducimus cumque autem aut!
+</body>
+</html>
