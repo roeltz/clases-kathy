@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flex: Santo Grial</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style>
+		html {
+			height: 100%;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			margin: 0;
+		}
+
+		header {
+			height: 60px;
+			background: yellow;
+		}
+
+		div {
+			flex: 1 1;
+			display: flex;
+		}
+
+		nav {
+			flex-grow: 1;
+			background: green;
+		}
+
+		main {
+			flex-grow: 3;
+			flex-shrink: 1;
+			flex-basis: 50%;
+			background: silver;
+		}
+
+		aside {
+			flex-grow: 1;
+			background: purple;
+		}
+
+		footer {
+			height: 60px;
+			background: red;
+		}
+
+		header,
+		footer {
+			flex: 0 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		HEADER
+	</header>
+	<div>
+		<nav>
+			NAV
+		</nav>
+		<main>
+			<h1>Artículo</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae cupiditate magni. Repellat, blanditiis? Distinctio nobis recusandae cumque eveniet dolores dicta sunt similique necessitatibus molestias, enim vitae dignissimos repellendus!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae cupiditate magni. Repellat, blanditiis? Distinctio nobis recusandae cumque eveniet dolores dicta sunt similique necessitatibus molestias, enim vitae dignissimos repellendus!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae cupiditate magni. Repellat, blanditiis? Distinctio nobis recusandae cumque eveniet dolores dicta sunt similique necessitatibus molestias, enim vitae dignissimos repellendus!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae cupiditate magni. Repellat, blanditiis? Distinctio nobis recusandae cumque eveniet dolores dicta sunt similique necessitatibus molestias, enim vitae dignissimos repellendus!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae cupiditate magni. Repellat, blanditiis? Distinctio nobis recusandae cumque eveniet dolores dicta sunt similique necessitatibus molestias, enim vitae dignissimos repellendus!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae cupiditate magni. Repellat, blanditiis? Distinctio nobis recusandae cumque eveniet dolores dicta sunt similique necessitatibus molestias, enim vitae dignissimos repellendus!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum beatae cupiditate magni. Repellat, blanditiis? Distinctio nobis recusandae cumque eveniet dolores dicta sunt similique necessitatibus molestias, enim vitae dignissimos repellendus!</p>
+		</main>
+		<aside>
+			ASIDE
+		</aside>
+	</div>
+	<footer>
+		FOOTER
+	</footer>
+</body>
+</html>
